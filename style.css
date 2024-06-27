@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    font-size: 0.8333333333vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 1.3333334vw;
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 4.102564103vw;
+    }
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 29.375rem;
+    background: #222;
+    color: #fff;
+    border-radius: 1.25rem;
+    padding: 2.5rem 2.188rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 0.625rem 1.563rem;
+    height: 3.75rem;
+    border-radius: 1.875rem;
+    flex: 1;
+    margin-right: 1rem;
+    font-size: 1.125rem;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 1rem;
+}
+
+.wather-icon {
+    width: 10.625rem;
+    margin-top: 1.875rem;
+}
+
+.weather h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 2.813rem;
+    font-weight: 400;
+    margin-top: -0.625rem;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    margin-top: 3.125rem;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 2.5rem;
+    margin-right: 0.625rem;
+}
+
+.humidity,
+.wind {
+    font-size: 1.75rem;
+    margin-top: -0.375rem;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 0.625rem;
+    font-size: 1.2rem;
+    margin-top: 0.625rem;
+    display: none;
+}
+
+.error p{
+    color: #ff0000;
+}
